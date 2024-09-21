@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    background-color: #eaeaea;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 800PX;
+}
+
+.accordion {
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #222;
+}
+
+.accordion-body {
+    color: #222;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 12px;
+}
+
+.accordion-body.active {
+    max-height: 200px;
+    padding: 12px;
+}
+
+.arrow {
+    transition: transform .2s linear;
+    color: #222;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 2rem 0rem;
+    color: #222;
+    font-size: 3rem;
+}
