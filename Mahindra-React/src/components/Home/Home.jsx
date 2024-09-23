@@ -1,5 +1,5 @@
 import React from "react";
-import imagemFecar from './assets/img/fecar.png'
+import imagemFecar from '../../assets/img/fecar.png'
 
 function Home(){return( 
 <section class="home">
