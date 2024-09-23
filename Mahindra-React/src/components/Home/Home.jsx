@@ -19,3 +19,5 @@ function Home(){return(
 
     <div class="rhombus2"></div>
 </section>)}
+
+export default Home
