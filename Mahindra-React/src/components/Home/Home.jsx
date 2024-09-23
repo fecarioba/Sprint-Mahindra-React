@@ -1,4 +1,5 @@
 import React from "react";
+import imagemFecar from './assets/img/fecar.png'
 
 function Home(){return( 
 <section class="home">
@@ -12,7 +13,7 @@ function Home(){return(
 
     <div class="home-img">
         <div class="rhombus">
-            {/* <img src="./img/fecar.png" alt=""> */}
+            <img src={imagemFecar} alt=""/>
         </div>
     </div>
 
