@@ -12,8 +12,7 @@
   import imagemNissan from '../../assets/img/nissan.jpg'
   import imagemPorshe from '../../assets/img/porshe.png'
   import { Imagens } from "./Imagens.jsx";
-  // desestruturar os hooks depois
-
+  
   function Slider() {
 
 // const nextBtn = document.querySelector('.next-btn');

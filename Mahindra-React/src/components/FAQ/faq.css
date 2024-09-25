@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-header{
+header {
     background-color: #eaeaea;
 }
 
@@ -21,7 +21,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 800PX;
+    width: 800px;
 }
 
 .accordion {
@@ -74,15 +74,15 @@ header{
     transform: rotate(180deg);
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     margin: 2rem 0rem;
     color: #222;
     font-size: 3rem;
