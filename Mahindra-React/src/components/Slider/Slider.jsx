@@ -31,7 +31,7 @@ function Slider() {
     { src: imagemPorshe, title: "Tag Heuer Porsche" },
   ];
 
-  const favoritos = []
+  let favoritos = [];
 
   const nextSlide = () => {
     setSlideNumero((prev) => (prev + 1) % imagens.length);

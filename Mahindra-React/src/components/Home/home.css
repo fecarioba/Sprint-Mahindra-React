@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #eaeaea;
 }
 
 .logo {
@@ -164,3 +165,4 @@ body {
     transform: rotate(45deg);
     z-index: -1;
 }
+

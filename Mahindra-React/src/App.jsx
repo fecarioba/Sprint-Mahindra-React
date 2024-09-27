@@ -1,16 +1,19 @@
-import Header from "./components/Header/Header.jsx";
-import Slider from "./components/Slider/Slider.jsx";
 import Home from "./components/Home/Home.jsx";
+import Login from "./components/Login/Login.jsx";
+import Faq from "./components/FAQ/Faq.jsx";
 import React from "react";
-import "../src/index.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Home/>
-      <Slider/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="faq" element={<Faq />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
