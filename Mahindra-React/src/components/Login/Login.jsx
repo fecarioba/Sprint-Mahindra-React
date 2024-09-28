@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
+import iconeCadastro from "../../assets/cadastro.svg";
+import iconeLogin from "../../assets/login.svg";
 
 const Login = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
@@ -115,7 +117,7 @@ const Login = () => {
               Login
             </button>
           </div>
-          <img src="../img/login.svg" alt="Login" className="image" />
+          <img src={iconeLogin} alt="Login" className="image" />
         </div>
         <div className={`panel right-panel ${isSignUpMode ? "" : "hidden"}`}>
           <div className="content">
@@ -128,7 +130,7 @@ const Login = () => {
               Cadastre-se
             </button>
           </div>
-          <img src="../img/cadastro.svg" alt="Cadastro" className="image" />
+          <img src={iconeCadastro} alt="Cadastro" className="image" />
         </div>
       </div>
     </div>
