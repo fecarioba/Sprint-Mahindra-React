@@ -14,7 +14,7 @@ import imagemPorshe from '../../assets/img/porshe.png';
 
 
 function Slider() {
-  const divFav = document.querySelector('#divFav');
+  // const divFav = document.querySelector('.favoritar');
   const [slideNumero, setSlideNumero] = useState(0);
 
   const imagens = [
@@ -31,7 +31,7 @@ function Slider() {
     { src: imagemPorshe, title: "Tag Heuer Porsche" },
   ];
 
-  let favoritos = [];
+  // let favoritos = [];
 
   const nextSlide = () => {
     setSlideNumero((prev) => (prev + 1) % imagens.length);
@@ -41,85 +41,83 @@ function Slider() {
     setSlideNumero((prev) => (prev - 1 + imagens.length) % imagens.length);
   };
 
+  // window.onload = () => {
+  //   carregarLocalStorage();
+  //   mostrarFav();
+  // };
 
+  // const carregarLocalStorage = () => {
+  //   const itemSalvo = localStorage.getItem('imagens');
+  //   if (itemSalvo) {
+  //     imagens - JSON.parse(itemSalvo);
+  //   }
 
-  window.onload = () => {
-    carregarLocalStorage();
-    mostrarFav();
-  };
+  //   const favoritoSalvo = localStorage.getItem('favoritos');
+  //   if (favoritoSalvo) {
+  //     favoritos = JSON.parse(favoritoSalvo);
+  //   }
+  // };
 
-  const carregarLocalStorage = () => {
-    const itemSalvo = localStorage.getItem('imagens');
-    if (itemSalvo) {
-      imagens - JSON.parse(itemSalvo);
-    }
-
-    const favoritoSalvo = localStorage.getItem('favoritos');
-    if (favoritoSalvo) {
-      favoritos = JSON.parse(favoritoSalvo);
-    }
-  };
-
-  const salvarFavorito = (objeto) => {
-    if (localStorage.getItem('favoritos')) {
-      favorito = JSON.parse(localStorage.getItem('favoritos'));
-    }
+  // const salvarFavorito = (objeto) => {
+  //   if (localStorage.getItem('favoritos')) {
+  //     favorito = JSON.parse(localStorage.getItem('favoritos'));
+  //   }
   
-    favorito.push(objeto);
-    const favoritosJSON = JSON.stringify(favorito);
-    localStorage.setItem('favoritos', favoritosJSON);
-  }
+  //   favorito.push(objeto);
+  //   const favoritosJSON = JSON.stringify(favorito);
+  //   localStorage.setItem('favoritos', favoritosJSON);
+  // }
 
-  const removerFavorito = (id) => {
-    if (localStorage.getItem('favoritos')) {
-      naoFavorito = JSON.parse(localStorage.getItem('favoritos'));
-    }
+  // const removerFavorito = (id) => {
+  //   if (localStorage.getItem('favoritos')) {
+  //     naoFavorito = JSON.parse(localStorage.getItem('favoritos'));
+  //   }
   
-    const procurarFav = naoFavorito.find(fav => fav.id === id);
-    const favoritoFiltro = naoFavorito.filter(fav => fav.id != procurarFav.id);
-    const favoritoFiltroJSON = JSON.stringify(favoritoFiltro);
-    localStorage.setItem('favoritos', favoritoFiltroJSON);
-  }
+  //   const procurarFav = naoFavorito.find(fav => fav.id === id);
+  //   const favoritoFiltro = naoFavorito.filter(fav => fav.id != procurarFav.id);
+  //   const favoritoFiltroJSON = JSON.stringify(favoritoFiltro);
+  //   localStorage.setItem('favoritos', favoritoFiltroJSON);
+  // }
 
-  const mostrarFav = () => {
-    divFav.innerHTML = '';
+  // const mostrarFav = () => {
+  //   divFav.innerHTML = '';
   
-    imagens.forEach((imagem) => {
-      const coracao = document.createElement('img');
-      const favoritoSalvo = favoritos.find(fav => fav.id === imagem.id);
+  //   imagens.forEach((imagem) => {
+  //     const coracao = document.createElement('img');
+  //     const favoritoSalvo = favoritos.find(fav => fav.id === imagem.id);
   
-      if (favoritoSalvo) {
-        coracao.src = '../../assets/img/favoritado.svg';
-      } else {
-        coracao.src = '../../assets/img/nao-favoritado.svg';
-      }
+  //     if (favoritoSalvo) {
+  //       coracao.src = '../../assets/img/favoritado.svg';
+  //     } else {
+  //       coracao.src = '../../assets/img/nao-favoritado.svg';
+  //     }
       
-      coracao.style.cursor = 'pointer';
-      coracao.addEventListener('click', (e) => {
-        favoritoClicado(e, imagem);
-      });
+  //     coracao.style.cursor = 'pointer';
+  //     coracao.addEventListener('click', (e) => {
+  //       favoritoClicado(e, imagem);
+  //     });
 
-      botoes.append(coracao);
-      divFav.append(botoes);
-    });
-  }
+  //     botoes.append(coracao);
+  //     divFav.append(botoes);
+  //   });
+  // }
 
-  const favoritoClicado = (eventoDeClique, objetoFav) => {
-    const estadoFavorito = {
-      favoritado: '../../assets/img/favoritado.svg',
-      naoFavoritado: '../../assets/img/nao-favoritado.svg'
-    }
+  // const favoritoClicado = (eventoDeClique, objetoFav) => {
+  //   const estadoFavorito = {
+  //     favoritado: '../../assets/img/favoritado.svg',
+  //     naoFavoritado: '../../assets/img/nao-favoritado.svg'
+  //   }
   
-    const nomeImagem = eventoDeClique.target.src.split('/').pop();
+  //   const nomeImagem = eventoDeClique.target.src.split('/').pop();
   
-    if (nomeImagem === 'nao-favoritado.svg') {
-      eventoDeClique.target.src = estadoFavorito.favoritado;
-      salvarFavorito(objetoFav);
-    } else {
-      eventoDeClique.target.src = estadoFavorito.naoFavoritado;
-      removerFavorito(objetoFav.id);
-    }
-  }
+  //   if (nomeImagem === 'nao-favoritado.svg') {
+  //     eventoDeClique.target.src = estadoFavorito.favoritado;
+  //     salvarFavorito(objetoFav);
+  //   } else {
+  //     eventoDeClique.target.src = estadoFavorito.naoFavoritado;
+  //     removerFavorito(objetoFav.id);
+  //   }
+  // }
 
   return (
     <section className="banner" id="comecoConteudo">
@@ -134,7 +132,6 @@ function Slider() {
             </div>
           </div>
         ))}
-        <div id="divFav"></div>
         <div className="navigation">
           <span className="prev-btn" onClick={prevSlide}>
             <i className="bx bx-chevron-left"></i>

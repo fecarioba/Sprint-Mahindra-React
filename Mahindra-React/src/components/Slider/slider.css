@@ -171,3 +171,17 @@
 .navigation span:nth-child(1):hover i {
     color: #444;
 }
+  
+/* .favoritar {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+  
+.favoritar img {
+    width: 40px;
+    height: 40px;
+} */
