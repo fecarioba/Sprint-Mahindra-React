@@ -22,11 +22,11 @@ const Login = () => {
         >
           <h2 className="title">Login</h2>
           <div className="input-field">
-            <label htmlFor="loginEmail"></label>
+            <i class="fas fa-user"></i>
             <input type="email" required placeholder="Email" id="loginEmail" />
           </div>
           <div className="input-field">
-            <label htmlFor="loginSenha"></label>
+            <i class="fas fa-lock"></i>
             <input
               type="password"
               required
@@ -52,7 +52,7 @@ const Login = () => {
           </div>
           <p className="account-text">
             Não possui conta?{" "}
-            <a href="#" onClick={toggleSignUpMode}>
+            <a href="#" onClick={toggleSignUpMode} id="cadastro">
               Cadastre-se
             </a>
           </p>
@@ -64,7 +64,7 @@ const Login = () => {
         >
           <h2 className="title">Cadastro</h2>
           <div className="input-field">
-            <label htmlFor="usuario"></label>
+            <i class="fas fa-user"></i>
             <input
               type="text"
               required
@@ -73,11 +73,11 @@ const Login = () => {
             />
           </div>
           <div className="input-field">
-            <label htmlFor="email"></label>
+            <i class="fas fa-envelope"></i>
             <input type="text" required placeholder="Email" id="email" />
           </div>
           <div className="input-field">
-            <label htmlFor="senha"></label>
+            <i class="fas fa-lock"></i>
             <input type="password" required placeholder="Senha" id="senha" />
           </div>
           <input type="submit" value="Cadastrar" className="btn" />

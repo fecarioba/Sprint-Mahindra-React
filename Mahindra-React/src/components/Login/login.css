@@ -91,6 +91,7 @@ form.sign-up-form {
     font-weight: 600;
     color: #444;
     height: 100%;
+    padding: 5px;
 }
 
 .btn {
