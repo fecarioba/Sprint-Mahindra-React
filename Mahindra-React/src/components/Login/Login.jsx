@@ -9,6 +9,7 @@ const Login = () => {
   const toggleSignUpMode = () => {
     setIsSignUpMode(!isSignUpMode);
   };
+  
 
   return (
     <div
