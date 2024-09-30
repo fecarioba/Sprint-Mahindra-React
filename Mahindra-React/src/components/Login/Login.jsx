@@ -38,16 +38,16 @@ const Login = () => {
           <p className="social-text">Ou</p>
           <div className="social-media">
             <a href="#" className="social-icon">
-              Facebook
+              <i class="fab fa-facebook"></i>
             </a>
             <a href="#" className="social-icon">
-              Twitter
+              <i class="fab fa-twitter"></i>
             </a>
             <a href="#" className="social-icon">
-              Google
+              <i class="fab fa-google"></i>
             </a>
             <a href="#" className="social-icon">
-              LinkedIn
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
           <p className="account-text">
@@ -84,16 +84,16 @@ const Login = () => {
           <p className="social-text">Ou</p>
           <div className="social-media">
             <a href="#" className="social-icon">
-              Facebook
+              <i class="fab fa-facebook"></i>
             </a>
             <a href="#" className="social-icon">
-              Twitter
+              <i class="fab fa-twitter"></i>
             </a>
             <a href="#" className="social-icon">
-              Google
+              <i class="fab fa-google"></i>
             </a>
             <a href="#" className="social-icon">
-              LinkedIn
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
           <p className="account-text">

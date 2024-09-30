@@ -5,7 +5,7 @@ import "./header.css";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header-home">
       <a href="index.html" className="logo">
         Mahindra
       </a>

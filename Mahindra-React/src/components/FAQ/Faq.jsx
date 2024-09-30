@@ -14,9 +14,7 @@ function AccordionItem({ question, answer }) {
       <button className="accordion-header" onClick={toggleAccordion}>
         <span>{question}</span>
         <i
-          className={`fa-solid fa-chevron-${isOpen ? "up" : "down"} arrow ${
-            isOpen ? "rotate" : ""
-          }`}
+          className={`fa-solid fa-chevron-down arrow ${isOpen ? "rotate" : ""}`}
         ></i>
       </button>
       <div className={`accordion-body ${isOpen ? "active" : ""}`}>

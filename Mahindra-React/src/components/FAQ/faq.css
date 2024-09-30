@@ -59,13 +59,14 @@
   }
   
   .arrow {
-      transition: transform .2s linear;
-      color: #222;
+    transition: transform 0.2s ease-in-out; /* Suavizando a rotação */
+    color: #222;
   }
   
   .arrow.rotate {
-      transform: rotate(180deg);
+    transform: rotate(180deg); /* Gira 180 graus */
   }
+  
   #faq-titulo {
     display: block;
     width: 50%;

@@ -17,7 +17,7 @@ function Home() {
             alta performance, pistas urbanas emocionantes e um compromisso com o
             futuro sustentável do esporte automobilístico.
           </p>
-          <a href="#comecoConteudo" className="btn">
+          <a href="#comecoConteudo" className="btn-home">
             Explorar Carros
           </a>
         </div>

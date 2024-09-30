@@ -1,13 +1,3 @@
-
-
-/* body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #444;
-} */
-
 #login {
     display: flex;
     align-items: center;
@@ -17,13 +7,6 @@
     margin-top: 5%;
 }
 
-/* .corpo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #444;
-} */
 .container {
     position: relative;
     width: 70vw;
