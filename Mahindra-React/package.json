@@ -1,9 +1,10 @@
-{
+{ 
+  "homepage": "https://fecarioba.github.io/Sprint-Mahindra-React",
   "name": "mahindra-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fecarioba.github.io/Sprint-Mahindra-React",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
